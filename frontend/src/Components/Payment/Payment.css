@@ -1,0 +1,157 @@
+.payment-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative; /* Added to position back button */
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto; /* Override default button width */
+  padding: 8px 15px;
+  margin: 0; /* Override default button margin */
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  background-color: #f5f5f5;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.back-button .arrow-icon {
+  margin-right: 5px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.booking-details {
+  margin: 0 auto;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+.general-info, .passenger-info {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.general-info div, .passenger-info div {
+  margin-bottom: 10px;
+}
+
+.passenger-info {
+  margin-top: 20px;
+}
+
+.passenger-info div {
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.passenger-info div strong {
+  font-weight: bold;
+}
+
+h4 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.total-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 25px;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Button styling */
+button {
+  /*width: 25%;*/
+  padding: 15px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 20px auto;
+  display: block;
+  transition: none; /* Disable any transition effects */
+}
+
+/* Center button properly */
+.booking-details button {
+  position: relative;
+  left: 0; /* Remove left positioning */
+  transform: none; /* Remove transform */
+  margin: 20px auto; /* Center with margin auto */
+}
+
+/* Disabled button state */
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Add responsive styles */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+  
+  .booking-details {
+    padding: 15px;
+  }
+}
