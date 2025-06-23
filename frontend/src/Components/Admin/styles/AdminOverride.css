@@ -1,0 +1,160 @@
+/* Admin Override Styles - with high specificity to ensure they take precedence */
+
+/* Sidebar positioning */
+body .sidebar {
+  width: 210px !important;
+  background-color: white !important;
+  height: 100vh !important;
+  position: fixed !important;
+  left: 0 !important;
+  top: 0 !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05) !important;
+  z-index: 100 !important;
+  padding: 0 !important;
+  overflow-y: auto !important;
+}
+
+/* Logo styling */
+body .sidebar .logo {
+  padding: 20px 0 !important;
+  margin-bottom: 20px !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+  text-align: center !important;
+}
+
+body .sidebar .logo h2 {
+  color: #4169e1 !important;
+  font-size: 1.3rem !important;
+  font-weight: 600 !important;
+}
+
+/* Navigation links */
+body .sidebar .nav-links {
+  list-style: none !important;
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 0 20px !important;
+}
+
+body .sidebar .nav-links li {
+  position: relative !important;
+  border-radius: 4px !important;
+  margin-bottom: 5px !important;
+}
+
+body .sidebar .nav-links a {
+  display: flex !important;
+  align-items: center !important;
+  padding: 12px 15px !important;
+  color: #4a5568 !important;
+  text-decoration: none !important;
+  border-radius: 4px !important;
+  transition: all 0.2s ease !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+}
+
+/*body .sidebar .nav-links a:hover {
+  background-color: #4169e1 !important;
+  color: #4169e1 !important;
+}*/
+
+body .sidebar .nav-links li.active {
+  background-color: #4169e1 !important;
+}
+
+body .sidebar .nav-links li.active a {
+  color: white !important;
+}
+
+body .sidebar .nav-links svg {
+  margin-right: 12px !important;
+  width: 18px !important;
+  text-align: center !important;
+  font-size: 1.1rem !important;
+  color: inherit !important;
+}
+
+/* Main content positioning */
+body .admin-container .admin-main-content {
+  margin-left: 210px !important;
+  padding: 1rem 2rem !important;
+  width: calc(100% - 210px) !important;
+  max-width: calc(100% - 210px) !important;
+  background-color: #f8fafc !important;
+}
+
+/* Top bar styling */
+body .admin-container .top-bar {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  margin-bottom: 1.5rem !important;
+  background-color: white !important;
+  padding: 0.75rem 1.5rem !important;
+  border-radius: 6px !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03) !important;
+}
+
+/* Content section */
+body .admin-container .content-section {
+  display: none !important;
+  padding: 1.5rem !important;
+  background: white !important;
+  border-radius: 8px !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+  margin-top: 10px !important;
+}
+
+body .admin-container .content-section.active {
+  display: block !important;
+}
+
+body .admin-container .content-section h1 {
+  font-size: 1.5rem !important;
+  color: #1e293b !important;
+  font-weight: 600 !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* Data table styling */
+body .admin-container .data-table {
+  width: 100% !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  font-size: 14px !important;
+}
+
+body .admin-container .data-table th,
+body .admin-container .data-table td {
+  padding: 12px 15px !important;
+  text-align: left !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+}
+
+body .admin-container .data-table th {
+  background-color: #f8fafc !important;
+  color: #64748b !important;
+  font-weight: 600 !important;
+  font-size: 13px !important;
+}
+
+/* Status labels */
+body .admin-container .status {
+  display: inline-block !important;
+  padding: 3px 8px !important;
+  border-radius: 4px !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  text-transform: capitalize !important;
+}
+
+body .admin-container .status.active {
+  background-color: #dcfce7 !important;
+  color: #16a34a !important;
+}
+
+body .admin-container .status.on-leave {
+  background-color: #fef3c7 !important;
+  color: #d97706 !important;
+} 

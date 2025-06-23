@@ -1,0 +1,425 @@
+/* Flight Operations Specific Styles */
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.action-icon {
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.action-icon.view {
+  color: var(--primary-color);
+}
+
+.action-icon.edit {
+  color: var(--warning-color);
+}
+
+.action-icon.delete {
+  color: var(--danger-color);
+}
+
+.action-icon.view:hover {
+  color: var(--secondary-color);
+}
+
+.action-icon.edit:hover {
+  color: #b45309;
+}
+
+.action-icon.delete:hover {
+  color: #b91c1c;
+}
+
+/* Schedule Management Styles */
+.schedule-filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.schedule-filters select {
+  padding: 8px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  min-width: 200px;
+}
+
+.schedule-calendar {
+  background-color: #f8fafc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #64748b;
+}
+
+.schedule-list {
+  background-color: #f8fafc;
+  border-radius: 8px;
+  padding: 20px;
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #64748b;
+}
+
+/* Flight Operations Styles */
+#flight-operations-section {
+  padding: 20px;
+}
+
+#flight-operations-section h1 {
+  margin-bottom: 24px;
+  font-size: 24px;
+  color: #333;
+  border-bottom: 2px solid #3f51b5;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+/* Action Bar */
+.action-bar {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.action-btn:hover {
+  background-color: #303f9f;
+}
+
+.action-btn.add-btn {
+  background-color: #4CAF50;
+}
+
+.action-btn.add-btn:hover {
+  background-color: #388E3C;
+}
+
+.action-btn.schedule-btn {
+  background-color: #FF9800;
+}
+
+.action-btn.schedule-btn:hover {
+  background-color: #F57C00;
+}
+
+/* Flights Table */
+.flights-container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  overflow-x: auto;
+}
+
+.flights-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.flights-table th {
+  text-align: left;
+  padding: 15px;
+  background-color: #f9fafb;
+  border-bottom: 2px solid #eee;
+  color: #333;
+  font-weight: 600;
+}
+
+.flights-table td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  color: #444;
+}
+
+.flights-table tr:hover {
+  background-color: #f9fafb;
+}
+
+.flight-time {
+  font-weight: bold;
+  color: #3f51b5;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.flight-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-icon {
+  font-size: 16px;
+}
+
+.status-icon.scheduled {
+  color: #4CAF50;
+}
+
+.status-icon.delayed {
+  color: #FF9800;
+}
+
+.status-icon.cancelled {
+  color: #F44336;
+}
+
+.actions-cell {
+  display: flex;
+  gap: 8px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.icon-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.view-btn {
+  color: #3f51b5;
+}
+
+.edit-btn {
+  color: #FF9800;
+  text-align: center;
+}
+
+.delete-btn {
+  color: #F44336;
+}
+
+.no-results {
+  text-align: center;
+  padding: 30px;
+  color: #888;
+  font-style: italic;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-container {
+  background-color: white;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #888;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+/* Form Styles */
+#flight-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 200px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #3f51b5;
+  box-shadow: 0 0 0 2px rgba(63, 81, 181, 0.2);
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #388E3C;
+}
+
+.cancel-btn {
+  padding: 10px 20px;
+  background-color: #e0e0e0;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  background-color: #d0d0d0;
+}
+
+/* Schedule Styles */
+.schedule-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.schedule-filters {
+  display: flex;
+  gap: 20px;
+  background-color: #f9fafb;
+  padding: 15px;
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+
+.schedule-table-container {
+  max-height: 400px;
+  overflow-y: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.schedule-table th {
+  position: sticky;
+  top: 0;
+  background-color: #f9fafb;
+  text-align: left;
+  padding: 12px 15px;
+  border-bottom: 2px solid #eee;
+  color: #333;
+}
+
+.schedule-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    min-width: 100%;
+  }
+  
+  .action-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .modal-container {
+    width: 95%;
+    max-height: 95vh;
+  }
+} 

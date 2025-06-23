@@ -1,0 +1,305 @@
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f8fafc;
+}
+
+/* App Bar Styles */
+.app-bar {
+    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%) !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Drawer Styles */
+.MuiDrawer-paper {
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%) !important;
+    border-right: 1px solid #e2e8f0 !important;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* User Profile Section */
+.user-profile {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.user-profile:hover {
+    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+}
+
+.avatar {
+    width: 56px !important;
+    height: 56px !important;
+    background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%) !important;
+    font-size: 1.5rem !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.username {
+    font-weight: 600 !important;
+    color: white !important;
+}
+
+.user-email {
+    color: #e2e8f0 !important;
+    font-size: 0.875rem !important;
+}
+
+/* Navigation Menu Styles */
+.menu-item {
+    margin: 0.5rem 1rem !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+}
+
+.menu-item:hover {
+    background-color: #f1f5f9 !important;
+    transform: translateX(4px);
+}
+
+.menu-item.logout {
+    margin-top: 1rem !important;
+    border-top: 1px solid #e2e8f0 !important;
+}
+
+.menu-icon {
+    color: #1e40af !important;
+    min-width: 40px !important;
+}
+
+.menu-text {
+    color: #1e293b !important;
+    font-weight: 500 !important;
+}
+
+/* Main Content Area */
+.main-content {
+    padding: 2rem !important;
+    background-color: #f8fafc;
+}
+
+/* Welcome Section */
+.welcome-section {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.welcome-title {
+    color: #1e3a8a !important;
+    font-weight: 700 !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.welcome-subtitle {
+    color: #64748b !important;
+    font-size: 1.1rem !important;
+}
+
+/* Dashboard Cards */
+.dashboard-card {
+    height: 100%;
+    border-radius: 12px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
+    transition: all 0.3s ease !important;
+    background: white !important;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card-title {
+    color: #1e3a8a !important;
+    font-weight: 600 !important;
+    margin-bottom: 1rem !important;
+}
+
+/* About Airline Section */
+.about-airline {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%) !important;
+}
+
+.airline-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.airline-description {
+    color: #4b5563 !important;
+    line-height: 1.6 !important;
+    font-size: 1.1rem !important;
+}
+
+.airline-stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 1rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    flex: 1;
+}
+
+.stat-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.stat-number {
+    color: #1e3a8a !important;
+    font-weight: 700 !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.stat-label {
+    color: #64748b !important;
+    font-weight: 500 !important;
+}
+
+/* Destinations */
+.destinations-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.destination-item {
+    padding: 1rem !important;
+    border-radius: 8px !important;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%) !important;
+    display: flex !important;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s ease !important;
+}
+
+.destination-item:hover {
+    transform: translateX(4px);
+    background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%) !important;
+}
+
+.location-icon {
+    color: #1e40af !important;
+    font-size: 1.5rem !important;
+}
+
+.price {
+    color: #0f766e !important;
+    font-weight: 500 !important;
+}
+
+/* Flight Deals */
+.deals-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.view-all-button {
+    color: #1e40af !important;
+    font-weight: 500 !important;
+}
+
+.deals-grid {
+    margin-top: 1rem !important;
+}
+
+.deal-card {
+    padding: 1.5rem !important;
+    border-radius: 12px !important;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%) !important;
+    transition: all 0.3s ease !important;
+}
+
+.deal-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%) !important;
+}
+
+.deal-route {
+    color: #1e3a8a !important;
+    font-weight: 600 !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.deal-price {
+    color: #0f766e !important;
+    font-weight: 700 !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.deal-type {
+    color: #64748b !important;
+    font-size: 0.875rem !important;
+}
+
+/* AI Floating Button */
+.ai-floating-button {
+    position: fixed !important;
+    bottom: 2rem !important;
+    right: 2rem !important;
+    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    transition: all 0.3s ease !important;
+    z-index: 1000;
+}
+
+.ai-floating-button:hover {
+    transform: scale(1.1) !important;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .dashboard-card {
+        margin-bottom: 1.5rem;
+    }
+
+    .welcome-title {
+        font-size: 1.5rem !important;
+    }
+
+    .welcome-subtitle {
+        font-size: 1rem !important;
+    }
+
+    .airline-stats {
+        flex-direction: column;
+    }
+
+    .stat-item {
+        width: 100%;
+    }
+
+    .airline-description {
+        font-size: 1rem !important;
+    }
+
+    .deals-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .ai-floating-button {
+        bottom: 1rem !important;
+        right: 1rem !important;
+    }
+}

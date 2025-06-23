@@ -1,0 +1,477 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+  }
+  
+  .booking-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  header {
+    background-color: #3986FF;
+    padding: 1.5rem 0;
+    margin: 20px 20px 32px 20px;
+    border-radius: 8px;
+    color: white;
+    position: relative;
+  }
+  
+  .header-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+  }
+  
+  .header-bottom h1 {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .back-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white ;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    text-shadow: none;
+  }
+  
+  .back-button i {
+    color: white !important;
+  }
+  
+  .back-button span {
+    /*color: white ;*/
+    font-weight: 500;
+  }
+  
+  .back-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    text-shadow: none;
+    transform: translateY(-50%);
+  }
+  
+  .placeholder {
+    display: none;
+  }
+  
+  main {
+    flex: 1;
+    padding: 2rem;
+    background-color: #f5f5f5;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .general-info,
+  .flight-details {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .general-info h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #007BFF;
+  }
+  
+  .general-info input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .general-info input:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  }
+  
+  .flight-details {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    order: 1;
+  }
+  
+  .flight-details h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #007BFF;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+  }
+  
+  .flight-details p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f5f5f5;
+    padding: 0.5rem 0;
+  }
+  
+  .flight-details p:last-child {
+    border-bottom: none;
+  }
+  
+  .flight-details p strong {
+    margin-right: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .seats-section {
+    background-color: white;
+    padding: 2rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    order: 2;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .seats-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    color: #007BFF;
+    text-align: center;
+  }
+  
+  .seats h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #007BFF;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .seats {
+    margin-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .seat-row {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+  
+  .seat {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid #ced4da;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 0 2px;
+  }
+  
+  .seat:hover {
+    background-color: #dee2e6;
+  }
+  
+  .seat.selected {
+    background-color: #007BFF;
+    color: white;
+    border-color: #0069d9;
+  }
+  
+  .seat.booked {
+    background-color: #d3d3d3;
+    cursor: not-allowed;
+  }
+  
+  .Platinum .seat {
+    width: 35px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+  
+  .passenger-info {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    border-left: 4px solid #007BFF;
+  }
+  
+  .passenger-info h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1.25rem;
+    color: #007BFF;
+  }
+  
+  .passenger-info input,
+  .passenger-info select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .passenger-info input:focus,
+  .passenger-info select:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+  }
+  
+  .passenger-info select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="%23333" viewBox="0 0 16 16"><path d="M8 11.5l-6-6 1.5-1.5L8 8.5l4.5-4.5L14 5.5l-6 6z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 12px;
+    padding-right: 2.5rem;
+  }
+  
+  .book-button {
+    order: 3;
+    width: 100%;
+    max-width: 300px;
+    margin: 1.5rem auto 0;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+  }
+  
+  .book-button:hover {
+    background-color: #0069d9;
+  }
+  
+  footer {
+    background-color: #1c2331;
+    color: white;
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .footer-content div {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .footer-content a {
+    display: block;
+    color: #adb5bd;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-content p {
+    color: #adb5bd;
+    font-size: 0.9rem;
+  }
+  
+  .footer-content a:hover {
+    color: #007BFF;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      gap: 1.5rem;
+    }
+    
+    .header-bottom {
+      padding: 0 1rem;
+    }
+    
+    .header-bottom h1 {
+      font-size: 1.5rem;
+    }
+    
+    .back-button {
+      right: 1rem;
+    }
+    
+    .seat {
+      width: 25px;
+      height: 25px;
+      font-size: 0.7rem;
+    }
+    
+    .seat-row {
+      gap: 0.25rem;
+    }
+    
+    .footer-content {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    main {
+      padding: 1rem;
+    }
+    
+    .header-bottom {
+      padding: 0 0.5rem;
+    }
+    
+    .header-bottom h1 {
+      font-size: 1.2rem;
+    }
+    
+    .back-button {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.9rem;
+      right: 0.5rem;
+    }
+    
+    .seat {
+      width: 20px;
+      height: 20px;
+      font-size: 0.6rem;
+    }
+    
+    .book-button {
+      max-width: 100%;
+    }
+  }
+  
+  /* Special styling for different classes */
+  .Platinum .seat-row {
+    max-width: 220px;
+  }
+  
+  .Business .seat-row {
+    max-width: 450px;
+  }
+  
+  .Economy .seat-row {
+    max-width: 450px;
+  }
+  
+  /* Seat layout styling */
+  .seats-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .aisle {
+    width: 20px;
+    height: 30px;
+    margin: 0 10px;
+  }
+  
+  /* Remove the previous aisle styling since we're now using an explicit aisle element */
+  .Business .seat-row > div:nth-child(3)::after,
+  .Economy .seat-row > div:nth-child(3)::after {
+    content: none;
+  }
+  
+  .Platinum .seats-container {
+    max-width: 400px;
+  }
+  
+  .Platinum .seat-row {
+    max-width: 250px;
+    justify-content: center;
+  }
+  
+  header .header-bottom .back-button,
+  header .header-bottom .back-button i,
+  header .header-bottom .back-button span {
+    color: #007BFF !important;
+    text-decoration: none;
+  }
+  
+  /* Ensure no text shift on hover */
+  .back-button:hover,
+  .back-button:hover i,
+  .back-button:hover span {
+    color: #ffffff !important;
+    text-shadow: none;
+  }
