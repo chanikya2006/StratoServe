@@ -48,6 +48,11 @@ A full‑stack web application for airline operations: An intuitive platform des
 - **cancellations requests**:Admin can approve the cancellation requests they recieve
   ![Cancellation](Screenshots/Cancellation.png)
 
+### standout feature
+- **Ai assistant** : Users can use the Ai assistant and can get their travelling suggestions.
+ ![Aiassistant](Screenshots/AIassistant(1).png)
+ ![Aiassistant](Screenshots/AIassistant(2).png)
+
 ## Tech Stack
 
 - **Frontend**: React, Vite, CSS Modules
